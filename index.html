@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Resort & Spa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-top">AURUM</span>
+      <span class="logo-sub">Resort &amp; Spa</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#rooms" class="nav-link">Rooms</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#booking" class="nav-link">Book</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <img
+      class="hero-bg"
+      src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80"
+      alt="Aurum Resort exterior"
+    />
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to Aurum</p>
+      <h1 class="hero-title">Life is<br /><em>Beautiful</em></h1>
+      <p class="hero-subtitle">An intimate sanctuary where time slows and every detail is an act of devotion.</p>
+      <div class="hero-cta-group">
+        <a href="#booking" class="btn btn-gold">Book Now</a>
+        <a href="#rooms" class="btn btn-ghost">Explore Rooms</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Fine Dining · Infinity Pool · Private Spa · Concierge 24/7 · Luxury Suites · Iraqi Hospitality ·</span>
+      <span>Fine Dining · Infinity Pool · Private Spa · Concierge 24/7 · Luxury Suites · Iraqi Hospitality ·</span>
+    </div>
+  </div>
+
+  <section class="rooms-section section" id="rooms">
+    <div class="section-header">
+      <p class="section-eyebrow">Accommodations</p>
+      <h2 class="section-title">Our Rooms &amp; Suites</h2>
+      <p class="section-desc">Each space is a private world — designed for stillness, beauty, and absolute comfort.</p>
+    </div>
+
+    <div class="rooms-grid">
+
+      <article class="room-card" data-room="Deluxe Tigris Room">
+        <div class="room-img-wrap">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Deluxe Tigris Room" loading="lazy"/>
+          <div class="room-badge">Most Popular</div>
+        </div>
+        <div class="room-body">
+          <div class="room-meta">
+            <h3 class="room-title">Deluxe Tigris Room</h3>
+            <p class="room-price"><span>$220</span> / night</p>
+          </div>
+          <p class="room-desc">Wake to beautiful river-inspired views with king bed, marble bath, and traditional Iraqi welcome sweets.</p>
+          <ul class="room-features">
+            <li>🌊 River View</li>
+            <li>👤 2 Adults</li>
+            <li>📶 High-Speed Wi-Fi</li>
+            <li>🛁 Luxury Bath</li>
+          </ul>
+          <button class="btn btn-gold room-book-btn" data-room="Deluxe Tigris Room">Book Now</button>
+        </div>
+      </article>
+
+      <article class="room-card" data-room="Baghdad Royal Suite">
+        <div class="room-img-wrap">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Baghdad Royal Suite" loading="lazy"/>
+        </div>
+        <div class="room-body">
+          <div class="room-meta">
+            <h3 class="room-title">Baghdad Royal Suite</h3>
+            <p class="room-price"><span>$350</span> / night</p>
+          </div>
+          <p class="room-desc">Elegant suite with private lounge, Arabic décor touches, dining area, and premium guest service.</p>
+          <ul class="room-features">
+            <li>🏛️ Royal Interior</li>
+            <li>👥 2–4 Guests</li>
+            <li>📶 High-Speed Wi-Fi</li>
+            <li>🛎️ VIP Service</li>
+          </ul>
+          <button class="btn btn-gold room-book-btn" data-room="Baghdad Royal Suite">Book Now</button>
+        </div>
+      </article>
+
+      <article class="room-card" data-room="Basra Sky Penthouse">
+        <div class="room-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" alt="Basra Sky Penthouse" loading="lazy"/>
+          <div class="room-badge room-badge--dark">Signature</div>
+        </div>
+        <div class="room-body">
+          <div class="room-meta">
+            <h3 class="room-title">Basra Sky Penthouse</h3>
+            <p class="room-price"><span>$620</span> / night</p>
+          </div>
+          <p class="room-desc">Top-floor penthouse with panoramic skyline terrace, private jacuzzi, and exclusive dining service.</p>
+          <ul class="room-features">
+            <li>🏙️ Skyline View</li>
+            <li>👥 Up to 4 Guests</li>
+            <li>🍽️ Private Dining</li>
+            <li>♨️ Jacuzzi</li>
+          </ul>
+          <button class="btn btn-gold room-book-btn" data-room="Basra Sky Penthouse">Book Now</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="about-section section" id="about">
+    <div class="about-image-col">
+      <div class="about-img-stack">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80" alt="Aurum Resort lobby" loading="lazy"/>
+        <img class="about-img-accent" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80" alt="Aurum Resort pool" loading="lazy"/>
+      </div>
+    </div>
+    <div class="about-text-col">
+      <p class="section-eyebrow">Our Story</p>
+      <h2 class="section-title">A Legacy of <em>Iraqi</em> Hospitality</h2>
+      <p class="about-body">Founded in 1987 in the heart of Iraq, Aurum Resort &amp; Spa was built on a tradition of generosity.</p>
+      <p class="about-body">Today our rooms and suites welcome travellers seeking tranquillity, authentic cuisine, and refined service.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">39</span>
+          <span class="stat-label">Years of Excellence</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">48</span>
+          <span class="stat-label">Exclusive Rooms</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Luxury Suites</span>
+        </div>
+      </div>
+      <a href="#booking" class="btn btn-gold">Reserve Your Stay</a>
+    </div>
+  </section>
+
+  <section class="contact-section section" id="contact">
+    <div class="section-header">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>Baghdad Street,<br />Basra, Iraq</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+964 770 123 4567</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>concierge@aurumiraq.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-top">AURUM</span>
+        <span class="logo-sub">Resort &amp; Spa</span>
+        <p class="footer-tagline">Where every moment is golden.</p>
+      </div>
+      <p class="footer-copy">&copy; 2026 Aurum Resort &amp; Spa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

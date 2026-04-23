@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aurum Resort & Spa</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + Jost (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo">
       <span class="logo-top">AURUM</span>
@@ -28,8 +30,10 @@
     </ul>
   </nav>
 
+  <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="hero-overlay"></div>
+    <!-- Unsplash free-to-use landscape image -->
     <img
       class="hero-bg"
       src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80"
@@ -50,13 +54,15 @@
     </div>
   </section>
 
+  <!-- ========== MARQUEE STRIP ========== -->
   <div class="marquee-strip" aria-hidden="true">
     <div class="marquee-track">
-      <span>Fine Dining · Infinity Pool · Private Spa · Concierge 24/7 · Luxury Suites · Iraqi Hospitality ·</span>
-      <span>Fine Dining · Infinity Pool · Private Spa · Concierge 24/7 · Luxury Suites · Iraqi Hospitality ·</span>
+      <span>Fine Dining &nbsp;·&nbsp; Infinity Pool &nbsp;·&nbsp; Private Spa &nbsp;·&nbsp; Concierge 24/7 &nbsp;·&nbsp; Oceanfront Suites &nbsp;·&nbsp; Curated Experiences &nbsp;·&nbsp;</span>
+      <span>Fine Dining &nbsp;·&nbsp; Infinity Pool &nbsp;·&nbsp; Private Spa &nbsp;·&nbsp; Concierge 24/7 &nbsp;·&nbsp; Oceanfront Suites &nbsp;·&nbsp; Curated Experiences &nbsp;·&nbsp;</span>
     </div>
   </div>
 
+  <!-- ========== ROOMS ========== -->
   <section class="rooms-section section" id="rooms">
     <div class="section-header">
       <p class="section-eyebrow">Accommodations</p>
@@ -66,86 +72,112 @@
 
     <div class="rooms-grid">
 
-      <article class="room-card" data-room="Deluxe Tigris Room">
+      <!-- Room 1 -->
+      <article class="room-card" data-room="Deluxe Ocean Room">
         <div class="room-img-wrap">
-          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Deluxe Tigris Room" loading="lazy"/>
+          <img
+            src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+            alt="Deluxe Ocean Room"
+            loading="lazy"
+          />
           <div class="room-badge">Most Popular</div>
         </div>
         <div class="room-body">
           <div class="room-meta">
-            <h3 class="room-title">Deluxe Tigris Room</h3>
-            <p class="room-price"><span>$220</span> / night</p>
+            <h3 class="room-title">Deluxe Ocean Room</h3>
+            <p class="room-price"><span>$320</span> / night</p>
           </div>
-          <p class="room-desc">Wake to beautiful river-inspired views with king bed, marble bath, and traditional Iraqi welcome sweets.</p>
+          <p class="room-desc">Wake to panoramic sea views from floor-to-ceiling windows. King bed, rainfall shower, and curated minibar included.</p>
           <ul class="room-features">
-            <li>🌊 River View</li>
+            <li>🌊 Ocean View</li>
             <li>👤 2 Adults</li>
             <li>📶 High-Speed Wi-Fi</li>
-            <li>🛁 Luxury Bath</li>
+            <li>🛁 Rain Shower</li>
           </ul>
-          <button class="btn btn-gold room-book-btn" data-room="Deluxe Tigris Room">Book Now</button>
+          <button class="btn btn-gold room-book-btn" data-room="Deluxe Ocean Room">Book Now</button>
         </div>
       </article>
 
-      <article class="room-card" data-room="Baghdad Royal Suite">
+      <!-- Room 2 -->
+      <article class="room-card" data-room="Garden Villa Suite">
         <div class="room-img-wrap">
-          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Baghdad Royal Suite" loading="lazy"/>
+          <img
+            src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80"
+            alt="Garden Villa Suite"
+            loading="lazy"
+          />
         </div>
         <div class="room-body">
           <div class="room-meta">
-            <h3 class="room-title">Baghdad Royal Suite</h3>
-            <p class="room-price"><span>$350</span> / night</p>
+            <h3 class="room-title">Garden Villa Suite</h3>
+            <p class="room-price"><span>$480</span> / night</p>
           </div>
-          <p class="room-desc">Elegant suite with private lounge, Arabic décor touches, dining area, and premium guest service.</p>
+          <p class="room-desc">A private villa nestled in tropical gardens with a plunge pool, outdoor dining terrace, and butler service.</p>
           <ul class="room-features">
-            <li>🏛️ Royal Interior</li>
+            <li>🌿 Garden &amp; Plunge Pool</li>
             <li>👥 2–4 Guests</li>
             <li>📶 High-Speed Wi-Fi</li>
-            <li>🛎️ VIP Service</li>
+            <li>🛎️ Butler Service</li>
           </ul>
-          <button class="btn btn-gold room-book-btn" data-room="Baghdad Royal Suite">Book Now</button>
+          <button class="btn btn-gold room-book-btn" data-room="Garden Villa Suite">Book Now</button>
         </div>
       </article>
 
-      <article class="room-card" data-room="Basra Sky Penthouse">
+      <!-- Room 3 -->
+      <article class="room-card" data-room="Penthouse Sky Suite">
         <div class="room-img-wrap">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" alt="Basra Sky Penthouse" loading="lazy"/>
+          <img
+            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+            alt="Penthouse Sky Suite"
+            loading="lazy"
+          />
           <div class="room-badge room-badge--dark">Signature</div>
         </div>
         <div class="room-body">
           <div class="room-meta">
-            <h3 class="room-title">Basra Sky Penthouse</h3>
-            <p class="room-price"><span>$620</span> / night</p>
+            <h3 class="room-title">Penthouse Sky Suite</h3>
+            <p class="room-price"><span>$890</span> / night</p>
           </div>
-          <p class="room-desc">Top-floor penthouse with panoramic skyline terrace, private jacuzzi, and exclusive dining service.</p>
+          <p class="room-desc">The crown jewel of Aurum — a full-floor penthouse with private rooftop terrace, infinity tub, and a dedicated sommelier.</p>
           <ul class="room-features">
-            <li>🏙️ Skyline View</li>
+            <li>🏙️ 360° Panorama</li>
             <li>👥 Up to 4 Guests</li>
-            <li>🍽️ Private Dining</li>
-            <li>♨️ Jacuzzi</li>
+            <li>🍷 Private Sommelier</li>
+            <li>♾️ Infinity Tub</li>
           </ul>
-          <button class="btn btn-gold room-book-btn" data-room="Basra Sky Penthouse">Book Now</button>
+          <button class="btn btn-gold room-book-btn" data-room="Penthouse Sky Suite">Book Now</button>
         </div>
       </article>
 
     </div>
   </section>
 
+  <!-- ========== ABOUT ========== -->
   <section class="about-section section" id="about">
     <div class="about-image-col">
       <div class="about-img-stack">
-        <img class="about-img-main" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80" alt="Aurum Resort lobby" loading="lazy"/>
-        <img class="about-img-accent" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80" alt="Aurum Resort pool" loading="lazy"/>
+        <img
+          class="about-img-main"
+          src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80"
+          alt="Aurum Resort lobby"
+          loading="lazy"
+        />
+        <img
+          class="about-img-accent"
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
+          alt="Aurum Resort pool"
+          loading="lazy"
+        />
       </div>
     </div>
     <div class="about-text-col">
       <p class="section-eyebrow">Our Story</p>
-      <h2 class="section-title">A Legacy of <em>Iraqi</em> Hospitality</h2>
-      <p class="about-body">Founded in 1987 in the heart of Iraq, Aurum Resort &amp; Spa was built on a tradition of generosity.</p>
-      <p class="about-body">Today our rooms and suites welcome travellers seeking tranquillity, authentic cuisine, and refined service.</p>
+      <h2 class="section-title">A Legacy of <em>Graceful</em> Hospitality</h2>
+      <p class="about-body">Founded in 1987 on a secluded clifftop overlooking the Mediterranean, Aurum Resort &amp; Spa was born from a single belief: that true luxury is not opulence, but devotion to detail.</p>
+      <p class="about-body">Thirty-seven years later, our 48 rooms and 6 private villas continue to attract discerning travellers seeking tranquillity, world-class cuisine, and an intimacy that larger resorts cannot offer.</p>
       <div class="about-stats">
         <div class="stat">
-          <span class="stat-num">39</span>
+          <span class="stat-num">37</span>
           <span class="stat-label">Years of Excellence</span>
         </div>
         <div class="stat">
@@ -154,13 +186,76 @@
         </div>
         <div class="stat">
           <span class="stat-num">6</span>
-          <span class="stat-label">Luxury Suites</span>
+          <span class="stat-label">Private Villas</span>
         </div>
       </div>
       <a href="#booking" class="btn btn-gold">Reserve Your Stay</a>
     </div>
   </section>
 
+  <!-- ========== BOOKING ========== -->
+  <section class="booking-section section" id="booking">
+    <div class="booking-inner">
+      <div class="booking-text">
+        <p class="section-eyebrow">Reservations</p>
+        <h2 class="section-title">Begin Your <em>Journey</em></h2>
+        <p class="booking-desc">Complete the form and our concierge team will confirm your reservation within 2 hours. Complimentary welcome champagne for direct bookings.</p>
+        <ul class="booking-perks">
+          <li>✦ Best rate guaranteed</li>
+          <li>✦ Free cancellation up to 48 hours</li>
+          <li>✦ Welcome gift on arrival</li>
+        </ul>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guestName">Full Name</label>
+            <input type="text" id="guestName" name="guestName" placeholder="Your full name" />
+            <span class="field-error" id="guestNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="guestEmail">Email Address</label>
+            <input type="email" id="guestEmail" name="guestEmail" placeholder="your@email.com" />
+            <span class="field-error" id="guestEmailError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="roomSelect">Room / Suite</label>
+            <select id="roomSelect" name="roomSelect">
+              <option value="">Select a room…</option>
+              <option value="Deluxe Ocean Room">Deluxe Ocean Room – $320/night</option>
+              <option value="Garden Villa Suite">Garden Villa Suite – $480/night</option>
+              <option value="Penthouse Sky Suite">Penthouse Sky Suite – $890/night</option>
+            </select>
+            <span class="field-error" id="roomSelectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" placeholder="2" min="1" max="6" />
+            <span class="field-error" id="guestsError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-In Date</label>
+            <input type="date" id="checkin" name="checkin" />
+            <span class="field-error" id="checkinError"></span>
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-Out Date</label>
+            <input type="date" id="checkout" name="checkout" />
+            <span class="field-error" id="checkoutError"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-gold btn-submit">Confirm Reservation</button>
+        <!-- Confirmation message (hidden by default) -->
+        <div class="booking-confirmation" id="bookingConfirmation" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
   <section class="contact-section section" id="contact">
     <div class="section-header">
       <p class="section-eyebrow">Get in Touch</p>
@@ -172,33 +267,67 @@
           <div class="contact-icon">📍</div>
           <div>
             <h4>Address</h4>
-            <p>Baghdad Street,<br />Basra, Iraq</p>
+            <p>12 Cliffside Promenade,<br />Côte d'Azur, France 06400</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">📞</div>
           <div>
             <h4>Phone</h4>
-            <p>+964 770 123 4567</p>
+            <p>+33 (0)4 93 00 12 87</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">✉️</div>
           <div>
             <h4>Email</h4>
-            <p>concierge@aurumiraq.com</p>
+            <p>concierge@aurumresort.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Concierge Hours</h4>
+            <p>24 hours · 7 days a week</p>
           </div>
         </div>
       </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="contactName">Your Name</label>
+          <input type="text" id="contactName" placeholder="Full name" />
+          <span class="field-error" id="contactNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Your Email</label>
+          <input type="email" id="contactEmail" placeholder="your@email.com" />
+          <span class="field-error" id="contactEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="contactMsg">Message</label>
+          <textarea id="contactMsg" rows="5" placeholder="How can we assist you?"></textarea>
+          <span class="field-error" id="contactMsgError"></span>
+        </div>
+        <button type="submit" class="btn btn-gold">Send Message</button>
+        <div class="booking-confirmation" id="contactConfirmation" aria-live="polite"></div>
+      </form>
     </div>
   </section>
 
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="logo-top">AURUM</span>
         <span class="logo-sub">Resort &amp; Spa</span>
         <p class="footer-tagline">Where every moment is golden.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
       </div>
       <p class="footer-copy">&copy; 2026 Aurum Resort &amp; Spa. All rights reserved.</p>
     </div>
